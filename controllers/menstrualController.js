@@ -48,7 +48,6 @@ async create(req, res) {
     const fertile_window_end = new Date(ovulation_date);
     fertile_window_end.setDate(fertile_window_end.getDate() + 1);
 
-    
     const cycle = await MenstrualCycle.create({
       user_id,
       start_date,
